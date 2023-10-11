@@ -407,8 +407,16 @@ http://j9a106.p.ssafy.io:3000
 
     ![grafana_화면](/uploads/cbdb54300b1d477d1b0247206824c316/grafana_화면.png)
 
+    
+
 
 ## OASYS 시연 영상
 
 ## OASYS 서비스 화면
 
+![junior_page](/uploads/8c189b45c254a06886062772f5414c01/junior_page.PNG)
+
+![senior_page](/uploads/662f558652ef8286d000999471be1546/senior_page.PNG)
+    ![senior_page2](/uploads/c502bba149ec5705d0cd36840c1b3c77/senior_page2.PNG)
+    ![senior_page3](/uploads/67f952a95cb6ad07db52acbab50e7938/senior_page3.PNG)
+    ![admin_page](/uploads/bf546467bb3242d02f462c40bf33217b/admin_page.PNG)
