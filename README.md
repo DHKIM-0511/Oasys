@@ -414,9 +414,9 @@ http://j9a106.p.ssafy.io:3000
 
 ## OASYS 서비스 화면
 
-![junior_page](/uploads/8c189b45c254a06886062772f5414c01/junior_page.PNG)
+<img src="/uploads/8c189b45c254a06886062772f5414c01/junior_page.PNG"  width="700" height="370">
+<img src="/uploads/662f558652ef8286d000999471be1546/senior_page.PNG"  width="700" height="370">
+<img src="/uploads/c502bba149ec5705d0cd36840c1b3c77/senior_page2.PNG"  width="700" height="370">
+<img src="/uploads/67f952a95cb6ad07db52acbab50e7938/senior_page3.PNG"  width="700" height="370">
+<img src="/uploads/bf546467bb3242d02f462c40bf33217b/admin_page.PNG"  width="700" height="370">
 
-![senior_page](/uploads/662f558652ef8286d000999471be1546/senior_page.PNG)
-    ![senior_page2](/uploads/c502bba149ec5705d0cd36840c1b3c77/senior_page2.PNG)
-    ![senior_page3](/uploads/67f952a95cb6ad07db52acbab50e7938/senior_page3.PNG)
-    ![admin_page](/uploads/bf546467bb3242d02f462c40bf33217b/admin_page.PNG)
