@@ -413,10 +413,21 @@ http://j9a106.p.ssafy.io:3000
 ## OASYS 시연 영상
 
 ## OASYS 서비스 화면
+- <i><b> 일반 사용자 얼굴 인식 시 제공되는 서비스 화면
+<img src="/uploads/8c189b45c254a06886062772f5414c01/junior_page.PNG"  width="500" height="370">
 
-<img src="/uploads/8c189b45c254a06886062772f5414c01/junior_page.PNG"  width="700" height="370">
-<img src="/uploads/662f558652ef8286d000999471be1546/senior_page.PNG"  width="700" height="370">
-<img src="/uploads/c502bba149ec5705d0cd36840c1b3c77/senior_page2.PNG"  width="700" height="370">
-<img src="/uploads/67f952a95cb6ad07db52acbab50e7938/senior_page3.PNG"  width="700" height="370">
-<img src="/uploads/bf546467bb3242d02f462c40bf33217b/admin_page.PNG"  width="700" height="370">
+
+- <i><b> 어르신 얼굴 인식 시 제공되는 서비스 화면 (음성 인식)
+<img src="/uploads/662f558652ef8286d000999471be1546/senior_page.PNG"  width="600" height="370">
+
+
+- <i><b> 고객 요청 사항 업무 분류 후 접수 처리 화면 및 전화번호 입력 화면
+<img src="/uploads/c502bba149ec5705d0cd36840c1b3c77/senior_page2.PNG"  width="600" height="370">
+
+- <i><b> 전화번호 입력 후 최종 화면
+<img src="/uploads/67f952a95cb6ad07db52acbab50e7938/senior_page3.PNG"  width="500" height="370">
+
+
+- <i><b> 창구 관리 화면
+<img src="/uploads/bf546467bb3242d02f462c40bf33217b/admin_page.PNG"  width="600" height="370">
 
