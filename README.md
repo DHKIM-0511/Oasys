@@ -377,6 +377,9 @@ TTS : google Cloud Text-to-Speech API v1
 ## 팀 역할 분배
 
 ![백엔드_소개](/uploads/02ed51c023cc274dddcd8205ef534574/백엔드_소개.PNG)
+- 정연수(BackEnd) : GPT API를 활용한 고객 요청 업무 분류, Google Cloud TTS API를 활용한 서비스 음성 구현, 서비스 데이터셋 구현 및 GPT 파인 튜닝 
+
+
 ![프론트소개](/uploads/a6b0736999f062f2f11611eda68ea8e3/프론트소개.PNG)
 
 ## 프로젝트 산출물
