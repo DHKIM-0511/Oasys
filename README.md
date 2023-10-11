@@ -411,4 +411,3 @@ http://j9a106.p.ssafy.io:3000
 ## OASYS 시연 영상
 
 ## OASYS 서비스 화면
-    ![서비스_화면.pdf](/uploads/26c4a75d5ec346bb2cd7a274ab1b48ea/서비스_화면.pdf)
