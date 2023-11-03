@@ -6,8 +6,8 @@ openai:
 spring:
   # Datasource 설정
   datasource:
-    username: admin
-    password: zxcv1234
+    username: your_name
+    password: your_password
     url: jdbc:mariadb://j9a106.p.ssafy.io:3306/oasys
     hikari:
       maximum-pool-size: 10

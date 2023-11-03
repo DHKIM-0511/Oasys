@@ -37,3 +37,5 @@ build/
 
 ### API key ###
 **/src/main/resources/env.yml
+**/GptController
+.yml
