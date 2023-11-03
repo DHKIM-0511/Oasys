@@ -37,5 +37,5 @@ build/
 
 ### API key ###
 **/src/main/resources/env.yml
-**/GptController
+**/src/main/java/com/dolfin/oasys/domain/gpt/controller/GptController
 .yml
