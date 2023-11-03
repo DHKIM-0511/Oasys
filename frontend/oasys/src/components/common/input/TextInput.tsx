@@ -84,20 +84,24 @@ function TextInput(props: TextInputProps) {
         onKeyDown,
     } = props;
 
+    // Make Input ID
+    const inputId = `input-${label}`;
+
     return (
         <InputContainer onClick={onClick}>
-            <LabelWrapper htmlFor="text-input">{label}</LabelWrapper>
+            <LabelWrapper htmlFor={inputId}>{label}</LabelWrapper>
             <InputWrapper
                 type={type}
                 width={width}
                 height={height}
-                id="text-input"
-                value={value}
+                id={inputId}
+                value={value.trim()}
                 readOnly={readOnly}
                 fontSize={fontSize}
                 placeholder={placeholder}
                 onChange={onChange}
                 onKeyDown={onKeyDown}
+                autoComplete="off"
             />
         </InputContainer>
     );

@@ -1,9 +1,10 @@
 /* Import */
-import { useAuthStore } from "@/store";
+import AdminLoginModal from "@components/modal/admin";
 import React, { useState } from "react";
 import styled from "@emotion/styled";
 import { TextInput } from "@components/common/input";
 import { TextButton } from "@components/common/button";
+import { useAuthStore } from "@/store";
 import useRouter from "@hooks/useRouter";
 
 // ----------------------------------------------------------------------------------------------------
@@ -12,12 +13,16 @@ import useRouter from "@hooks/useRouter";
 const LoginContainer = styled("div")`
     // Size Attribute
     width: 100%;
+    height: 100vh;
 
     // Style Attribute
     background-color: ${(props) => props.theme.colors.gray1};
+
+    // Interaction Attribute
+    user-select: none;
 `;
 
-const LoginWrapper = styled("div")`
+const LoginBox = styled("div")`
     // Position Attribute
     display: flex;
     flex-direction: column;
@@ -27,32 +32,29 @@ const LoginWrapper = styled("div")`
     // Size Attribute
     width: 50%;
     height: 100vh;
-    margin: 0 auto;
-    margin-top: 50px;
+    margin: auto;
 `;
 
-const LoginHeader = styled("div")`
-    width: 100%;
-    text-align: center;
-    font-size: 36px;
+const TitleWrapper = styled("div")`
+    // Size Attribute
+    margin-bottom: 1em;
+
+    // Text Attribute
+    font-size: 40px;
     font-weight: 700;
-    margin-bottom: 30px;
+    color: ${(props) => props.theme.colors.gray7};
 `;
 
-const IDContainer = styled("div")`
+const InputContainer = styled("div")`
+    // Position Attribute
     display: flex;
-    width: 60%;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 10px;
-`;
+    gap: 1em;
 
-const PWContainer = styled("div")`
-    display: flex;
+    // Size Attribute
     width: 60%;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 3em;
 `;
 
 const ButtonContainer = styled("div")`
@@ -70,54 +72,54 @@ const ButtonContainer = styled("div")`
 
 /* Admin Login Component */
 function AdminLogin() {
-    const updateAuthState = useAuthStore((state) => state.updateAuthState);
-    const { routeTo } = useRouter();
-    const [username, setUsername] = useState<string>("");
+    const [id, setId] = useState<string>("");
     const [password, setPassword] = useState<string>("");
-
-    /* Admin ID and Password */
+    const [isError, setIsError] = useState<boolean>(false);
+    const { routeTo } = useRouter();
+    const updateAuthState = useAuthStore((state) => state.updateAuthState);
     const { VITE_ADMIN_ID, VITE_ADMIN_PASSWORD } = import.meta.env;
 
+    // Handle Login Request
     const handleLogin = () => {
-        if (username === VITE_ADMIN_ID && password === VITE_ADMIN_PASSWORD) {
+        if (id === VITE_ADMIN_ID && password === VITE_ADMIN_PASSWORD) {
             updateAuthState({ isAuth: true });
             routeTo("/main");
         } else {
-            alert("아이디 또는 비밀번호가 올바르지 않습니다.");
+            setIsError(true);
         }
     };
-    const handleKeyDown = (e: React.KeyboardEvent) => {
-        if (e.key === "Enter") {
-            e.preventDefault();
+
+    // Handle Enter Key Press
+    const handleKeyDown = (event: React.KeyboardEvent) => {
+        if (event.key === "Enter") {
+            event.preventDefault();
             handleLogin();
         }
     };
 
     return (
         <LoginContainer>
-            <LoginWrapper>
-                <LoginHeader>관리자 페이지 로그인</LoginHeader>
-                <IDContainer>
+            <LoginBox>
+                <TitleWrapper>관리자 페이지 로그인</TitleWrapper>
+                <InputContainer>
                     <TextInput
                         width="100%"
-                        value={username}
+                        value={id}
                         label="아이디"
                         placeholder="아이디를 입력하세요."
-                        onChange={(e) => setUsername(e.target.value)}
+                        onChange={(event) => setId(event.target.value)}
                         onKeyDown={handleKeyDown}
                     />
-                </IDContainer>
-                <PWContainer>
                     <TextInput
-                        width="100%"
                         type="password"
+                        width="100%"
                         value={password}
                         label="비밀번호"
                         placeholder="비밀번호를 입력하세요."
-                        onChange={(e) => setPassword(e.target.value)}
+                        onChange={(event) => setPassword(event.target.value)}
                         onKeyDown={handleKeyDown}
                     />
-                </PWContainer>
+                </InputContainer>
                 <ButtonContainer>
                     <TextButton
                         width="20%"
@@ -135,7 +137,8 @@ function AdminLogin() {
                         onClick={() => routeTo("/home")}
                     />
                 </ButtonContainer>
-            </LoginWrapper>
+            </LoginBox>
+            {isError && <AdminLoginModal openModal={isError} getModal={() => setIsError(false)} />}
         </LoginContainer>
     );
 }
