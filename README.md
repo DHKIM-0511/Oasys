@@ -2,7 +2,7 @@
 
 2023.08.21(월) ~ 2023.10.06(금)
 
-SSAFY 9기 2학기 특화 프로젝트-OASYS
+
 
 ## OASYS 배경
 디지털 전환으로 인해 금융업무는 점차적으로 IT 기기로 대체되고 있습니다.
@@ -364,73 +364,5 @@ TTS : google Cloud Text-to-Speech API v1
         - 기능 명세서, ERD, 스토리보드 등 모두가 공유해야하는 문서 관리
         
 
-## 팀 소개
-### 팀명의 의미
-- 저희 팀명 돌핀은 ‘돌격! 핀테크’의 약자로 핀테크를 주제로 특화 프로젝트를 거침없이 진행하자는 의미를 담았습니다.
-### 팀 로고
-![돌핀소개](/uploads/524ad5e7f71066003d324bd998e6b64d/돌핀소개.PNG)
 
-- 저희 프로젝트 팀의 로고는 돌고래(Dolphin)가 돈을 들고 있는 모습을 형상화하였습니다. 돈은 특화 프로젝트 주제인 핀테크(FinTech)를 의미하고, 돌고래는 저희 팀명인 ‘돌핀’을 상징하며, 누구나 다가가기 쉬운 귀여운 모습으로 접근성이 좋은 앱을 개발하자는 의미를 담았습니다.
-### 팀원 정보
-![서울_1반_A106](/uploads/cab52fb04e8e554481bbe1eab20344a9/서울_1반_A106.png)
-
-## 팀 역할 분배
-
-![백엔드_소개](/uploads/02ed51c023cc274dddcd8205ef534574/백엔드_소개.PNG)
-- 정연수(BackEnd) : GPT API를 활용한 고객 요청 업무 분류, Google Cloud TTS API를 활용한 서비스 음성 구현, 서비스 데이터셋 구현 및 GPT 파인 튜닝 
-
-
-![프론트소개](/uploads/a6b0736999f062f2f11611eda68ea8e3/프론트소개.PNG)
-
-## 프로젝트 산출물
-
-## 프로젝트 결과물
-
-## OASYS 링크
-- <i><b>OASYS</b></i> : 
-https://j9a106.p.ssafy.io/
-에서 확인할 수 있습니다.
-    
-    아래 [시연 영상](#oasys-시연-영상) 또는 [서비스 화면](#oasys-서비스-화면)에서 볼 수 있습니다.
-- <i><b>Jenkins</b></i> : 
-http://j9a106.p.ssafy.io:8088
-에서 <admin> / <zxcv1234> 로 로그인 후에 젠킨스 웹사이트를 확인할 수 있습니다.
-
-    ![jenkins_화면](/uploads/6ad984e82a90a32dd910a24332997db0/jenkins_화면.png)
-
-- <i><b>Prometheus</b></i> : 
-http://j9a106.p.ssafy.io:9090/targets?search=
-에서 서버의 상태를 확인할 수 있습니다.
-
-    ![prometheus_화면](/uploads/085d41d555ce2f6e642c871358927da9/prometheus_화면.png)
-
-- <i><b>Grafana</b></i> : 
-http://j9a106.p.ssafy.io:3000
-에서 <admin> / <zxcv1234> 로 로그인 후에 서버의 상태를 확인할 수 있습니다.
-
-    ![grafana_화면](/uploads/cbdb54300b1d477d1b0247206824c316/grafana_화면.png)
-
-    
-
-
-## OASYS 시연 영상
-
-## OASYS 서비스 화면
-- <i><b> 일반 사용자 얼굴 인식 시 제공되는 서비스 화면</b></i>
-<img src="/uploads/8c189b45c254a06886062772f5414c01/junior_page.PNG"  width="500" height="370">
-
-
-- <i><b> 어르신 얼굴 인식 시 제공되는 서비스 화면 (음성 인식)</b></i>
-<img src="/uploads/662f558652ef8286d000999471be1546/senior_page.PNG"  width="600" height="370">
-
-
-- <i><b> 고객 요청 사항 업무 분류 후 접수 처리 화면 및 전화번호 입력 화면</b></i>
-<img src="/uploads/c502bba149ec5705d0cd36840c1b3c77/senior_page2.PNG"  width="600" height="370">
-
-- <i><b> 전화번호 입력 후 최종 화면</b></i>
-<img src="/uploads/67f952a95cb6ad07db52acbab50e7938/senior_page3.PNG"  width="500" height="370">
-
-
-- <i><b> 창구 관리 화면</b></i>
-<img src="/uploads/bf546467bb3242d02f462c40bf33217b/admin_page.PNG"  width="600" height="370">
 
