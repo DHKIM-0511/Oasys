@@ -36,6 +36,7 @@ build/
 .vscode/
 
 ### API key ###
-**/src/main/resources/env.yml
-**/target/
+Back-End/src/main/resources/env.yml
+Back-End/target/
+Back-End_AI/src/main/java/com/dolfin/oasys/domain/gpt/controller/GptController.java
 .yml
